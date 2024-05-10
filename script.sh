@@ -2,7 +2,7 @@
 #PBS -l walltime=00:02:00
 #PBS -l nodes=1:ppn=1
 #PBS -N Martsevyi_integral
-cd $PBS_O_WORKDIR/hpc
+cd $PBS_O_WORKDIR
 if [ ! -f $1 ]; then
     echo "Input file '$1' not found."
     exit 1
